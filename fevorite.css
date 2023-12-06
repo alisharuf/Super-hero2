@@ -1,0 +1,98 @@
+body {
+    background-image: url("final_marvel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#favlistitem {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+#outerbox {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#innerbox {
+    margin: 10px;
+}
+
+h5 {
+    margin-left: 10px;
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+button {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#innerbox img {
+    height: 300px;
+    width: 200px;
+}
+
+#logo {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+#logoimage {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.active {
+
+    border: none;
+    outline: none;
+    padding: 2px 13px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 30px;
+    background: rgb(204, 238, 236);
+    color: rgb(99, 19, 19);
+    cursor: pointer;
+    height: 35px;
+}
+
+/* spinning of batman logo */
+#spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* blinking of navbar title */
+.blink {
+    color: rgb(233, 96, 75);
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}

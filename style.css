@@ -1,0 +1,144 @@
+body {
+    background-image: url("final_marvel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+main {
+    height: auto;
+    width: 30vw;
+    margin: 2rem auto;
+    border: rgb(243, 8, 8) solid 2px;
+    border-radius: 30px;
+    background-color: azure;
+    position: relative;
+}
+
+#search {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #555;
+    padding: 10px 25px;
+    border-radius: 30px;
+    height: 49px;
+    flex: 1;
+    margin-right: 28px;
+    font-size: 16px;
+
+}
+
+
+#auto-complete {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#auto-complete li {
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container {
+    height: auto;
+    width: 70vw;
+    display: flex;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.container-fluid {
+    height: 60px;
+}
+
+.img img {
+    height: 400px;
+    width: auto;
+}
+
+.details {
+    height: 400px;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    overflow-y: auto;
+    padding-left: 15px;
+}
+
+#powerstats {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#bio {
+    margin-top: 10px;
+    color: blue;
+}
+
+#favbtn {
+    display: none;
+    /* width: 10px;  */
+}
+
+#logo {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+#logoimage {
+    height: 61px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.active {
+
+    border: none;
+    outline: none;
+    padding: 2px 13px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 30px;
+    background: rgb(204, 238, 236);
+    color: rgb(99, 19, 19);
+    cursor: pointer;
+    height: 35px;
+}
+
+/* spinning of batman logo */
+#spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* blinking of navbar title */
+.blink {
+    color: rgb(233, 96, 75);
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
